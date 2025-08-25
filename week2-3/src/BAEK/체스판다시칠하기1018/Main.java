@@ -1,6 +1,5 @@
 package BAEK.체스판다시칠하기1018;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -21,7 +20,6 @@ public class Main {
 					board[i][j] = 1;
 				}
 			}
-//			System.out.println(Arrays.toString(board[i]));
 		}
 		int min = Integer.MAX_VALUE;
 		//순회시작
@@ -32,30 +30,20 @@ public class Main {
 					continue;
 				}
 				//색칠하기
-				int cnt = 0;
-				int first = board[r][c];
+				int cntW = 0;
+				int cntB = 0;
 				for(int i = r; i < r+8; i++) {
 					for(int j = c; j < c+8; j++) {
-						int next = board[i][j];
-						System.out.println("first: " + first);
-						System.out.println("next: " + next);
-						if(r == i && j == c) {
-							j++;
-						}
-						if(first == next) {
-							next = (next+1)%2;
-							board[i][j] = next;
-							cnt++;
-							System.out.println(cnt);
-							
-						}
-						first = next;
+						//첫번째가 흑 or 백 
+						int pointW = ((i+j) % 2 == 0) ? 0 : 1;
+						int pointB = ((i+j) % 2 == 0) ? 1 : 0;
+						if(board[i][j] != pointW) cntW++;
+						if(board[i][j] != pointB) cntB++;
+						
 					}
 				}//색칠 끝
 				//최솟값비교
-				if(cnt < min) {
-					min = cnt;
-				}
+				min = Math.min(min, Math.min(cntW, cntB));
 				
 				
 			}
