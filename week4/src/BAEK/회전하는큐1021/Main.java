@@ -1,4 +1,4 @@
-package BAEK회전하는큐1021;
+package BAEK.회전하는큐1021;
 
 import java.util.LinkedList;
 import java.util.Scanner;
