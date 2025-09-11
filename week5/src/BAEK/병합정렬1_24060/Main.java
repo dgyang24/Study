@@ -20,8 +20,9 @@ public class Main {
 
 	}
 	static void merge_sort(int[] A, int left, int right) {
+		
 		int mid = (left + right) /2;
-		if(cnt == K) cnt = A[right];
+		
 		if(left == right) return;
 		
 		//왼쪽 정렬
@@ -34,13 +35,11 @@ public class Main {
 		
 	}
 	static void merge(int[] A, int left, int mid, int right) {
-		cnt++;
 		int n1 = mid - left + 1; // 왼쪽 배열의 길이
         int n2 = right - mid; // 오른쪽 배열의 길이
 		//왼쪽 오른쪽 배열
 		int[] leftTmp = new int[n1];
 		int[] rightTmp = new int[n2];
-		
 		
 		 // 왼쪽 배열 담기
         for (int i = 0; i < n1; i++) {
