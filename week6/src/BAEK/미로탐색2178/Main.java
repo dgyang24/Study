@@ -1,4 +1,4 @@
-package SWEA.미로탐색2178;
+package BAEK.미로탐색2178;
 
 import java.util.Arrays;
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package SWEA.DFS와BFS1260;
+package BAEK.DFS와BFS1260;
 
 import java.util.ArrayList;
 import java.util.Arrays;

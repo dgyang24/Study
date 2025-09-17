@@ -1,4 +1,4 @@
-package SWEA.스도쿠1580;
+package BAEK.스도쿠1580;
 
 import java.util.Scanner;
 
