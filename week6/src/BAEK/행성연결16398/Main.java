@@ -39,7 +39,7 @@ public class Main {
 		//초기화 끝!!
 		
 		int pick = 0;
-		int ans = 0; //비용 총합
+		long ans = 0; //비용 총합 <- 이거 롱으로 안하면 큰일남
 		//비용 오름차순
 		Collections.sort(edges);
 		//비용 순으로 돌면서 pick을 N-1개뽑을거임
