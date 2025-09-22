@@ -88,8 +88,7 @@ public class Main {
 		if(cnt >= 2) return true;
 		
 		return false;
-		
-		
+
 	}
 	
 
