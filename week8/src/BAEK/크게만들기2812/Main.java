@@ -39,7 +39,7 @@ public class Main {
 			sb.append(c);
 			visited[i] = true;
 			dfs(n+1);
-			sb.deleteCharAt(i);
+			sb.deleteCharAt(sb.length());
 			visited[i] = false;
 			
 		}
