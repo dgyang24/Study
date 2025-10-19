@@ -18,7 +18,6 @@ public class Main {
 			int cnt = 0;
 			int goal = arr[i];
 			for(int j = 0; j < N; j++) {
-				
 				if(result[j] == 0) {
 					if(goal == cnt) {
 						result[j] = i+1;

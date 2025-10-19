@@ -19,10 +19,8 @@ public class Main {
 			dp[i][0] = (dp[i-1][0]+dp[i-1][1]+dp[i-1][2]) % 9901;
 			//현재 줄 중 왼쪽 칸만 채워졌을때
 			dp[i][1] = (dp[i-1][0]+dp[i-1][2]) % 9901;
-			
 			//현재 줄 중 오른쪽 칸만 채워졌을 때
 			dp[i][2] = (dp[i-1][0]+dp[i-1][1]) % 9901;
-			
 		}
 		int ans = (dp[N][0]+dp[N][1]+dp[N][2])%9901;
 		System.out.println(ans);
